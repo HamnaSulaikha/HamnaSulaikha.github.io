@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="data:image/png;base64,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" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyeglasses,Sunglasses,Contact Lens Online-Lenscart IN</title>
+    <link rel="stylesheet" href="cart.css" type="text/css">
+</head>
+<body>
+    <nav class="nav">
+        <p>Do more,Be more</p>
+        <p>Tryin3D</p>
+        <p>StoreLocator</p>
+        <p>Quality</p>
+        <p>USA</p>
+        <p>Singapore</p>
+        <p>UAE</p>
+        <p>John Jacobs</p>
+        <p>Aqualens</p>
+        <p>Cobrowsing</p>
+        <p>Engineering Blog</p>
+        <p>Lenskart Franchise</p>
+        <p>Lenskart Optom Partner Program</p>
+        <p>                         Contact Us</p>
+    </nav>
+
+    <nav class="fnav">
+        <img src="https://static.lenskart.com/media/desktop/img/site-images/main_logo.svg" alt="">
+        <img src="https://static.lenskart.com/media/mobile/images/phone_number.svg" alt="">
+        <input  type="text" placeholder="What are you looking for ?">
+        <p>Track Order</p>
+        <p>Sign In & Sign Up</p>
+        <p>Wish List</p>
+        <p>Cart</p>
+    </nav>
+
+    <nav class="snav">
+        <p>EYEGLASSES</p>
+        <p>COMPUTER GLASSES</p>
+        <p>KIDS GLASSES</p>
+        <p>CONTACT LENSES</p>
+        <p>SUN GLASSES</p>
+        <P>HOME EYE-TEST</P>
+        <P>STORE LOCATOR</P>
+        <img src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png" alt="">
+        <img src="https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png" alt="">
+        <img src="https://static.lenskart.com/media/desktop/img/Feb22/18-Feb/goldlogo.jpg" alt="">
+
+    </nav>
+    
+    
+    <div class="lens">
+        <img src="https://static1.lenskart.com/media/desktop/img/Apr22/a2.png" alt="" >
+        <img src="https://static1.lenskart.com/media/desktop/img/Apr22/b2.png" alt="">
+        <img src="https://static1.lenskart.com/media/desktop/img/Apr22/d2.png" alt="">
+        <img src="https://static1.lenskart.com/media/desktop/img/Apr22/d.png" alt="">
+        <img src="https://static1.lenskart.com/media/desktop/img/Apr22/e2.png" alt="">
+        <img src="https://static1.lenskart.com/media/desktop/img/June22/prog11.jpg" alt="">
+    </div>
+    
+    
+    <div class="main">
+        <img src="https://static1.lenskart.com/media/desktop/img/Sep23/Dhaakad/HP-Web-Day-1.gif" alt="">
+        </div>
+
+
+        <div class="main2">
+        <img src="fashion-ess-web.webp" alt="">
+        </div>
+        
+        
+        <div class="main3">
+            <img src="Bannerforexport.webp" alt="">
+        </div>
+   
+ <div class="cart">
+    
+    <div class="card">
+        <p class="text">WEAR</p>
+        <P class="text">THE</P>
+        <P class="text">TREND</P>
+    </div>
+
+   
+
+    <div class="card">
+        <img src="https://static1.lenskart.com/media/desktop/img/Sep21/image179.png" alt="">
+        <p>Round</p>
+        <button>Explore</button>
+    </div>
+        <div class="card">
+            <img src="https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg" alt="">
+            <p>Cat-Eye</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card">
+            <img src="https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg" alt="">
+            <p>Clubmaster</p>
+            <button>Explore</button>
+        </div>
+
+        <div class="card">
+            <img src="https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg" alt="">
+            <p>Transparent</p>
+            <button>Explore</button>
+        </div>
+
+   </div>
+
+   <div class="card2">
+    <p class="text2">Our hottest collections</p>
+</div>
+
+   <div class="banner">
+    <h2>AS SEEN ON MOUNI ROY</h2>
+      
+      <div class="img">
+        <img src="as seen on mouni roy.web.webp" alt="">
+
+    </div>
+   </div>
+
+   <div class="banner">
+    <h2>AS SEEN ON SHARK TANK</h2>
+      
+      <div class="img">
+        <img src="as seen on shark tank.webp" alt="">
+        
+    </div>
+   </div>
+
+   <div class="banner">
+    <h2>AS SEEN ON KARAN JOHAR</h2>
+      
+      <div class="img">
+        <img src="as seen on karan johar.webp" alt="">
+        
+    </div>
+   </div>
+
+   <div class="banner">
+    <h2>TRENDING SUNGLASSES</h2>
+      
+      <div class="img">
+        <img src="trending sunglasses.webp" alt="">
+        
+    </div>
+   </div>
+
+   <div class="banner">
+    <h2>OJOS</h2>
+      
+      <div class="img">
+        <img src="OJOS.webp" alt="">
+        
+    </div>
+   </div>
+
+   <div class="banner">
+    <h2>AQUACOLOR - GLAM UP WITH COLOR LENSES</h2>
+      
+      <div class="img">
+        <img src="Aqua color glam up with color lenses.webp" alt="">
+        
+    </div>
+   </div>
+
+   <div class="banner">
+    <h2>INTRODUCING OJOS WEAR - SUBSCRIBE & SAVE</h2>
+      
+      <div class="img">
+        <img src="ojos wear subscribe and save.webp" alt="">
+        
+    </div>
+   </div>
+
+   <div class="banner">
+    <h2>CONTACT LENSES & MORE</h2>
+      
+      <div class="t-img">
+        <img src="aqua color.webp" alt="">
+        <img src="aqua lens.webp" alt="">
+    </div>
+   </div>
+
+   <div class="banner">
+    <h2>OUR BRANDS</h2>
+      
+      <div class="img">
+        <img src="our brands.webp" alt="">
+    </div>
+   </div>
+
+
+   <div class="eyeglasses">
+    <h2>EYEGLASSES</h2>
+    <img src="image1.jpg" alt="">
+    <img src="image2.jpg" alt="">
+    <img src="image3.jpg" alt="">
+   </div>
+
+   <div class="eyeglasses">
+    <h2>SUNGLASSES</h2>
+    <img src="image4.jpg" alt="">
+    <img src="image5.jpg" alt="">
+    <img src="image6.jpg" alt="">
+   </div>
+
+   <div class="main img">
+    <img src="JOHN AND JACOBS.webp" alt="">
+   </div>
+
+   <div class="main img2">
+    <img src="lenskart air.webp" alt="">
+   </div>
+
+   <div class="footer">
+    
+    <div class="list">
+        <ul>
+            <li>
+                <h2>Services</h2><br><br>
+                <a>Store Locator</a><br><br>
+                <a>Buying Guide</a><br><br>
+                <a>Frame Size</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="list">
+        <ul>
+            <li>
+                <h2>About Us</h2><br><br>
+                <a>We Are Hiring</a><br><br>
+                <a>Refer And Earn</a><br><br>
+                <a>About us</a><br><br>
+                <a>Lenskart Coupons</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="list">
+        <ul>
+            <li>
+                <h2>Help</h2><br><br>
+                <a>FAQ's</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="list">
+        <ul>
+            <li>
+                <img src="play-store.svg" alt="">
+                <img src="app-store.svg" alt="">
+                <p>Download Lenskart App to buy</p>
+                <p>Eyeglasses, Sunglasses and Contact Lenses</p>
+            </li>
+        </ul>
+    </div>
+
+   </div>
+
+
+</body>
+</html>
